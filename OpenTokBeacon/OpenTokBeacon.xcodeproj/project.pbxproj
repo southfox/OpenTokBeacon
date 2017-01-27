@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		70AE82801E3BF319008CFE92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AE827F1E3BF319008CFE92 /* AppDelegate.swift */; };
+		70AE82821E3BF319008CFE92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AE82811E3BF319008CFE92 /* ViewController.swift */; };
+		70AE82851E3BF319008CFE92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70AE82831E3BF319008CFE92 /* Main.storyboard */; };
+		70AE82871E3BF319008CFE92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70AE82861E3BF319008CFE92 /* Assets.xcassets */; };
+		70AE828A1E3BF319008CFE92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70AE82881E3BF319008CFE92 /* LaunchScreen.storyboard */; };
+		70AE82951E3BF319008CFE92 /* OpenTokBeaconTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AE82941E3BF319008CFE92 /* OpenTokBeaconTests.swift */; };
+		70AE82A01E3BF31A008CFE92 /* OpenTokBeaconUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AE829F1E3BF31A008CFE92 /* OpenTokBeaconUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		70AE82911E3BF319008CFE92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70AE82741E3BF319008CFE92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 70AE827B1E3BF319008CFE92;
+			remoteInfo = OpenTokBeacon;
+		};
+		70AE829C1E3BF31A008CFE92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70AE82741E3BF319008CFE92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 70AE827B1E3BF319008CFE92;
+			remoteInfo = OpenTokBeacon;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		70AE827C1E3BF319008CFE92 /* OpenTokBeacon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenTokBeacon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		70AE827F1E3BF319008CFE92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		70AE82811E3BF319008CFE92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		70AE82841E3BF319008CFE92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		70AE82861E3BF319008CFE92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		70AE82891E3BF319008CFE92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		70AE828B1E3BF319008CFE92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70AE82901E3BF319008CFE92 /* OpenTokBeaconTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenTokBeaconTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		70AE82941E3BF319008CFE92 /* OpenTokBeaconTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenTokBeaconTests.swift; sourceTree = "<group>"; };
+		70AE82961E3BF319008CFE92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70AE829B1E3BF31A008CFE92 /* OpenTokBeaconUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenTokBeaconUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		70AE829F1E3BF31A008CFE92 /* OpenTokBeaconUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenTokBeaconUITests.swift; sourceTree = "<group>"; };
+		70AE82A11E3BF31A008CFE92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		70AE82791E3BF319008CFE92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70AE828D1E3BF319008CFE92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70AE82981E3BF31A008CFE92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		70AE82731E3BF319008CFE92 = {
+			isa = PBXGroup;
+			children = (
+				70AE827E1E3BF319008CFE92 /* OpenTokBeacon */,
+				70AE82931E3BF319008CFE92 /* OpenTokBeaconTests */,
+				70AE829E1E3BF31A008CFE92 /* OpenTokBeaconUITests */,
+				70AE827D1E3BF319008CFE92 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		70AE827D1E3BF319008CFE92 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				70AE827C1E3BF319008CFE92 /* OpenTokBeacon.app */,
+				70AE82901E3BF319008CFE92 /* OpenTokBeaconTests.xctest */,
+				70AE829B1E3BF31A008CFE92 /* OpenTokBeaconUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		70AE827E1E3BF319008CFE92 /* OpenTokBeacon */ = {
+			isa = PBXGroup;
+			children = (
+				70AE827F1E3BF319008CFE92 /* AppDelegate.swift */,
+				70AE82811E3BF319008CFE92 /* ViewController.swift */,
+				70AE82831E3BF319008CFE92 /* Main.storyboard */,
+				70AE82861E3BF319008CFE92 /* Assets.xcassets */,
+				70AE82881E3BF319008CFE92 /* LaunchScreen.storyboard */,
+				70AE828B1E3BF319008CFE92 /* Info.plist */,
+			);
+			path = OpenTokBeacon;
+			sourceTree = "<group>";
+		};
+		70AE82931E3BF319008CFE92 /* OpenTokBeaconTests */ = {
+			isa = PBXGroup;
+			children = (
+				70AE82941E3BF319008CFE92 /* OpenTokBeaconTests.swift */,
+				70AE82961E3BF319008CFE92 /* Info.plist */,
+			);
+			path = OpenTokBeaconTests;
+			sourceTree = "<group>";
+		};
+		70AE829E1E3BF31A008CFE92 /* OpenTokBeaconUITests */ = {
+			isa = PBXGroup;
+			children = (
+				70AE829F1E3BF31A008CFE92 /* OpenTokBeaconUITests.swift */,
+				70AE82A11E3BF31A008CFE92 /* Info.plist */,
+			);
+			path = OpenTokBeaconUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		70AE827B1E3BF319008CFE92 /* OpenTokBeacon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70AE82A41E3BF31A008CFE92 /* Build configuration list for PBXNativeTarget "OpenTokBeacon" */;
+			buildPhases = (
+				70AE82781E3BF319008CFE92 /* Sources */,
+				70AE82791E3BF319008CFE92 /* Frameworks */,
+				70AE827A1E3BF319008CFE92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenTokBeacon;
+			productName = OpenTokBeacon;
+			productReference = 70AE827C1E3BF319008CFE92 /* OpenTokBeacon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		70AE828F1E3BF319008CFE92 /* OpenTokBeaconTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70AE82A71E3BF31A008CFE92 /* Build configuration list for PBXNativeTarget "OpenTokBeaconTests" */;
+			buildPhases = (
+				70AE828C1E3BF319008CFE92 /* Sources */,
+				70AE828D1E3BF319008CFE92 /* Frameworks */,
+				70AE828E1E3BF319008CFE92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				70AE82921E3BF319008CFE92 /* PBXTargetDependency */,
+			);
+			name = OpenTokBeaconTests;
+			productName = OpenTokBeaconTests;
+			productReference = 70AE82901E3BF319008CFE92 /* OpenTokBeaconTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		70AE829A1E3BF31A008CFE92 /* OpenTokBeaconUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70AE82AA1E3BF31A008CFE92 /* Build configuration list for PBXNativeTarget "OpenTokBeaconUITests" */;
+			buildPhases = (
+				70AE82971E3BF31A008CFE92 /* Sources */,
+				70AE82981E3BF31A008CFE92 /* Frameworks */,
+				70AE82991E3BF31A008CFE92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				70AE829D1E3BF31A008CFE92 /* PBXTargetDependency */,
+			);
+			name = OpenTokBeaconUITests;
+			productName = OpenTokBeaconUITests;
+			productReference = 70AE829B1E3BF31A008CFE92 /* OpenTokBeaconUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		70AE82741E3BF319008CFE92 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = OpenTok;
+				TargetAttributes = {
+					70AE827B1E3BF319008CFE92 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 27XTSJS68A;
+						ProvisioningStyle = Automatic;
+					};
+					70AE828F1E3BF319008CFE92 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 27XTSJS68A;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 70AE827B1E3BF319008CFE92;
+					};
+					70AE829A1E3BF31A008CFE92 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 27XTSJS68A;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 70AE827B1E3BF319008CFE92;
+					};
+				};
+			};
+			buildConfigurationList = 70AE82771E3BF319008CFE92 /* Build configuration list for PBXProject "OpenTokBeacon" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 70AE82731E3BF319008CFE92;
+			productRefGroup = 70AE827D1E3BF319008CFE92 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				70AE827B1E3BF319008CFE92 /* OpenTokBeacon */,
+				70AE828F1E3BF319008CFE92 /* OpenTokBeaconTests */,
+				70AE829A1E3BF31A008CFE92 /* OpenTokBeaconUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		70AE827A1E3BF319008CFE92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70AE828A1E3BF319008CFE92 /* LaunchScreen.storyboard in Resources */,
+				70AE82871E3BF319008CFE92 /* Assets.xcassets in Resources */,
+				70AE82851E3BF319008CFE92 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70AE828E1E3BF319008CFE92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70AE82991E3BF31A008CFE92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		70AE82781E3BF319008CFE92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70AE82821E3BF319008CFE92 /* ViewController.swift in Sources */,
+				70AE82801E3BF319008CFE92 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70AE828C1E3BF319008CFE92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70AE82951E3BF319008CFE92 /* OpenTokBeaconTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70AE82971E3BF31A008CFE92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70AE82A01E3BF31A008CFE92 /* OpenTokBeaconUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		70AE82921E3BF319008CFE92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 70AE827B1E3BF319008CFE92 /* OpenTokBeacon */;
+			targetProxy = 70AE82911E3BF319008CFE92 /* PBXContainerItemProxy */;
+		};
+		70AE829D1E3BF31A008CFE92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 70AE827B1E3BF319008CFE92 /* OpenTokBeacon */;
+			targetProxy = 70AE829C1E3BF31A008CFE92 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		70AE82831E3BF319008CFE92 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70AE82841E3BF319008CFE92 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		70AE82881E3BF319008CFE92 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70AE82891E3BF319008CFE92 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		70AE82A21E3BF31A008CFE92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		70AE82A31E3BF31A008CFE92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		70AE82A51E3BF31A008CFE92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 27XTSJS68A;
+				INFOPLIST_FILE = OpenTokBeacon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.opentok.OpenTokBeacon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		70AE82A61E3BF31A008CFE92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 27XTSJS68A;
+				INFOPLIST_FILE = OpenTokBeacon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.opentok.OpenTokBeacon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		70AE82A81E3BF31A008CFE92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 27XTSJS68A;
+				INFOPLIST_FILE = OpenTokBeaconTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.opentok.OpenTokBeaconTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenTokBeacon.app/OpenTokBeacon";
+			};
+			name = Debug;
+		};
+		70AE82A91E3BF31A008CFE92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 27XTSJS68A;
+				INFOPLIST_FILE = OpenTokBeaconTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.opentok.OpenTokBeaconTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenTokBeacon.app/OpenTokBeacon";
+			};
+			name = Release;
+		};
+		70AE82AB1E3BF31A008CFE92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 27XTSJS68A;
+				INFOPLIST_FILE = OpenTokBeaconUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.opentok.OpenTokBeaconUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = OpenTokBeacon;
+			};
+			name = Debug;
+		};
+		70AE82AC1E3BF31A008CFE92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 27XTSJS68A;
+				INFOPLIST_FILE = OpenTokBeaconUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.opentok.OpenTokBeaconUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = OpenTokBeacon;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		70AE82771E3BF319008CFE92 /* Build configuration list for PBXProject "OpenTokBeacon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70AE82A21E3BF31A008CFE92 /* Debug */,
+				70AE82A31E3BF31A008CFE92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70AE82A41E3BF31A008CFE92 /* Build configuration list for PBXNativeTarget "OpenTokBeacon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70AE82A51E3BF31A008CFE92 /* Debug */,
+				70AE82A61E3BF31A008CFE92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		70AE82A71E3BF31A008CFE92 /* Build configuration list for PBXNativeTarget "OpenTokBeaconTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70AE82A81E3BF31A008CFE92 /* Debug */,
+				70AE82A91E3BF31A008CFE92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		70AE82AA1E3BF31A008CFE92 /* Build configuration list for PBXNativeTarget "OpenTokBeaconUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70AE82AB1E3BF31A008CFE92 /* Debug */,
+				70AE82AC1E3BF31A008CFE92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 70AE82741E3BF319008CFE92 /* Project object */;
+}
