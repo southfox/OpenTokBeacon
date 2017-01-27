@@ -1,0 +1,12 @@
+use_frameworks!
+
+target 'OpenTokBeacon' do 
+    pod 'NVActivityIndicatorView', '~> 3.1'
+    pod 'SCLAlertView', '~> 0.7'
+    pod 'OTAcceleratorPackUtil', '~> 2.0.0-beta4'
+    pod 'Eddystone', :git => 'https://github.com/southfox/eddystone-ios.git', :branch => 'master'
+end
+
+pre_install do |installer|
+    def installer.verify_no_static_framework_transitive_dependencies; end
+end

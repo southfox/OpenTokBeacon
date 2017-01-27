@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37AF5C05B93BC4BB8EA366B4 /* Pods_OpenTokBeacon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F45A00C38F3A739FA2183ED /* Pods_OpenTokBeacon.framework */; };
 		70AE82801E3BF319008CFE92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AE827F1E3BF319008CFE92 /* AppDelegate.swift */; };
 		70AE82821E3BF319008CFE92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AE82811E3BF319008CFE92 /* ViewController.swift */; };
 		70AE82851E3BF319008CFE92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70AE82831E3BF319008CFE92 /* Main.storyboard */; };
@@ -34,6 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		30D2ECB6B3159BE4CFF0AA68 /* Pods-OpenTokBeacon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenTokBeacon.release.xcconfig"; path = "Pods/Target Support Files/Pods-OpenTokBeacon/Pods-OpenTokBeacon.release.xcconfig"; sourceTree = "<group>"; };
+		4065D0F20398DAE9C98FA4A0 /* Pods-OpenTokBeacon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenTokBeacon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OpenTokBeacon/Pods-OpenTokBeacon.debug.xcconfig"; sourceTree = "<group>"; };
+		5F45A00C38F3A739FA2183ED /* Pods_OpenTokBeacon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenTokBeacon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		70AE827C1E3BF319008CFE92 /* OpenTokBeacon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenTokBeacon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70AE827F1E3BF319008CFE92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70AE82811E3BF319008CFE92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37AF5C05B93BC4BB8EA366B4 /* Pods_OpenTokBeacon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,8 @@
 				70AE82931E3BF319008CFE92 /* OpenTokBeaconTests */,
 				70AE829E1E3BF31A008CFE92 /* OpenTokBeaconUITests */,
 				70AE827D1E3BF319008CFE92 /* Products */,
+				F7BF4A2E28FADE8017467904 /* Pods */,
+				9E93AAB627A366C7FEFF274C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +132,23 @@
 			path = OpenTokBeaconUITests;
 			sourceTree = "<group>";
 		};
+		9E93AAB627A366C7FEFF274C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F45A00C38F3A739FA2183ED /* Pods_OpenTokBeacon.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F7BF4A2E28FADE8017467904 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4065D0F20398DAE9C98FA4A0 /* Pods-OpenTokBeacon.debug.xcconfig */,
+				30D2ECB6B3159BE4CFF0AA68 /* Pods-OpenTokBeacon.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 70AE82A41E3BF31A008CFE92 /* Build configuration list for PBXNativeTarget "OpenTokBeacon" */;
 			buildPhases = (
+				AAABED725C0A59B996690F9F /* [CP] Check Pods Manifest.lock */,
 				70AE82781E3BF319008CFE92 /* Sources */,
 				70AE82791E3BF319008CFE92 /* Frameworks */,
 				70AE827A1E3BF319008CFE92 /* Resources */,
+				54628B4732C7A7441776229D /* [CP] Embed Pods Frameworks */,
+				F083C46E9386C52BDF7D66A2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,6 +283,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		54628B4732C7A7441776229D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenTokBeacon/Pods-OpenTokBeacon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AAABED725C0A59B996690F9F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F083C46E9386C52BDF7D66A2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenTokBeacon/Pods-OpenTokBeacon-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		70AE82781E3BF319008CFE92 /* Sources */ = {
@@ -413,6 +488,7 @@
 		};
 		70AE82A51E3BF31A008CFE92 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4065D0F20398DAE9C98FA4A0 /* Pods-OpenTokBeacon.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 27XTSJS68A;
@@ -426,6 +502,7 @@
 		};
 		70AE82A61E3BF31A008CFE92 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30D2ECB6B3159BE4CFF0AA68 /* Pods-OpenTokBeacon.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 27XTSJS68A;
