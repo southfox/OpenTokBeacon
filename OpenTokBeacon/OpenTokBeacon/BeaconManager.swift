@@ -10,6 +10,15 @@ import Foundation
 import Eddystone
 
 public class BeaconManager: Eddystone.ScannerDelegate {
+    struct notification {
+        struct beacon {
+            static let start : String = "notification.beacon.start"
+            struct detected {
+                static let ack : String = "notification.beacon.detected.ack"
+                static let nack : String = "notification.beacon.detected.nack"
+            }
+        }
+    }
     var uids = Eddystone.Scanner.nearbyUids
     var previousUids: [Eddystone.Uid] = []
     
@@ -17,7 +26,7 @@ public class BeaconManager: Eddystone.ScannerDelegate {
     
     func start() {
         Eddystone.Scanner.start(self)
-        NotificationCenter.default.post(name: NSNotification.Name(rawValue: Global.notification.beacon.start), object: nil)
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: notification.beacon.start), object: nil)
     }
     
     public func eddystoneNearbyDidChange() {
@@ -25,13 +34,13 @@ public class BeaconManager: Eddystone.ScannerDelegate {
         self.uids = Eddystone.Scanner.nearbyUids
         for uid in self.previousUids {
             if !self.uids.contains(uid) {
-                NotificationCenter.default.post(name: NSNotification.Name(rawValue: Global.notification.beacon.detected.nack), object: uid)
+                NotificationCenter.default.post(name: NSNotification.Name(rawValue: notification.beacon.detected.nack), object: uid)
                 break
             }
         }
         for uid in self.uids {
             if !self.previousUids.contains(uid) {
-                NotificationCenter.default.post(name: NSNotification.Name(rawValue: Global.notification.beacon.detected.ack), object: uid)
+                NotificationCenter.default.post(name: NSNotification.Name(rawValue: notification.beacon.detected.ack), object: uid)
                 break
             }
         }

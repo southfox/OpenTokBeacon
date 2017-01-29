@@ -23,6 +23,8 @@
 		70AE82C41E3CD82D008CFE92 /* OTOneToOneCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AE82BA1E3CD82D008CFE92 /* OTOneToOneCommunicator.m */; };
 		70AE82C51E3CD82D008CFE92 /* OTVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AE82BC1E3CD82D008CFE92 /* OTVideoView.m */; };
 		70AE82C61E3CD82D008CFE92 /* UIView+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AE82BE1E3CD82D008CFE92 /* UIView+Helper.m */; };
+		70AE82C71E3E037A008CFE92 /* BeaconManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AE82AD1E3C00EB008CFE92 /* BeaconManager.swift */; };
+		70AE82CC1E3E0554008CFE92 /* OpenTokManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AE82CB1E3E0554008CFE92 /* OpenTokManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +76,8 @@
 		70AE82BC1E3CD82D008CFE92 /* OTVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTVideoView.m; sourceTree = "<group>"; };
 		70AE82BD1E3CD82D008CFE92 /* UIView+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Helper.h"; sourceTree = "<group>"; };
 		70AE82BE1E3CD82D008CFE92 /* UIView+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Helper.m"; sourceTree = "<group>"; };
+		70AE82CB1E3E0554008CFE92 /* OpenTokManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenTokManager.swift; sourceTree = "<group>"; };
+		70AE82CD1E3E07D2008CFE92 /* OpenTokBeacon-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OpenTokBeacon-Bridging-Header.h"; sourceTree = "<group>"; };
 		86CAAA223AAF454FF58124E8 /* Pods_OpenTokBeacon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenTokBeacon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -106,8 +110,8 @@
 		70AE82731E3BF319008CFE92 = {
 			isa = PBXGroup;
 			children = (
-				70AE82AF1E3CD82D008CFE92 /* OTAcceleratorPackUtil */,
 				70AE827E1E3BF319008CFE92 /* OpenTokBeacon */,
+				70AE82AF1E3CD82D008CFE92 /* OTAcceleratorPackUtil */,
 				70AE82931E3BF319008CFE92 /* OpenTokBeaconTests */,
 				70AE829E1E3BF31A008CFE92 /* OpenTokBeaconUITests */,
 				70AE827D1E3BF319008CFE92 /* Products */,
@@ -131,11 +135,12 @@
 			children = (
 				70AE827F1E3BF319008CFE92 /* AppDelegate.swift */,
 				70AE82811E3BF319008CFE92 /* ViewController.swift */,
-				70AE82AD1E3C00EB008CFE92 /* BeaconManager.swift */,
+				70AE82CA1E3E046D008CFE92 /* Managers */,
 				70AE82831E3BF319008CFE92 /* Main.storyboard */,
 				70AE82861E3BF319008CFE92 /* Assets.xcassets */,
 				70AE82881E3BF319008CFE92 /* LaunchScreen.storyboard */,
 				70AE828B1E3BF319008CFE92 /* Info.plist */,
+				70AE82CD1E3E07D2008CFE92 /* OpenTokBeacon-Bridging-Header.h */,
 			);
 			path = OpenTokBeacon;
 			sourceTree = "<group>";
@@ -179,6 +184,15 @@
 			);
 			name = OTAcceleratorPackUtil;
 			path = OpenTokBeacon/OTAcceleratorPackUtil;
+			sourceTree = "<group>";
+		};
+		70AE82CA1E3E046D008CFE92 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				70AE82AD1E3C00EB008CFE92 /* BeaconManager.swift */,
+				70AE82CB1E3E0554008CFE92 /* OpenTokManager.swift */,
+			);
+			name = Managers;
 			sourceTree = "<group>";
 		};
 		9E93AAB627A366C7FEFF274C /* Frameworks */ = {
@@ -388,8 +402,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				70AE82821E3BF319008CFE92 /* ViewController.swift in Sources */,
+				70AE82CC1E3E0554008CFE92 /* OpenTokManager.swift in Sources */,
 				70AE82C41E3CD82D008CFE92 /* OTOneToOneCommunicator.m in Sources */,
 				70AE82C61E3CD82D008CFE92 /* UIView+Helper.m in Sources */,
+				70AE82C71E3E037A008CFE92 /* BeaconManager.swift in Sources */,
 				70AE82C11E3CD82D008CFE92 /* OTAcceleratorSession.m in Sources */,
 				70AE82C21E3CD82D008CFE92 /* OTCommonCommunicator.m in Sources */,
 				70AE82801E3BF319008CFE92 /* AppDelegate.swift in Sources */,
@@ -561,6 +577,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.opentok.OpenTokBeacon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OpenTokBeacon/OpenTokBeacon-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -583,6 +600,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.opentok.OpenTokBeacon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OpenTokBeacon/OpenTokBeacon-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
