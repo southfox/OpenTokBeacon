@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		37AF5C05B93BC4BB8EA366B4 /* Pods_OpenTokBeacon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F45A00C38F3A739FA2183ED /* Pods_OpenTokBeacon.framework */; };
+		5ABD54C557C47C7627316298 /* Pods_OpenTokBeacon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86CAAA223AAF454FF58124E8 /* Pods_OpenTokBeacon.framework */; };
 		70AE82801E3BF319008CFE92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AE827F1E3BF319008CFE92 /* AppDelegate.swift */; };
 		70AE82821E3BF319008CFE92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AE82811E3BF319008CFE92 /* ViewController.swift */; };
 		70AE82851E3BF319008CFE92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70AE82831E3BF319008CFE92 /* Main.storyboard */; };
@@ -15,6 +15,14 @@
 		70AE828A1E3BF319008CFE92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70AE82881E3BF319008CFE92 /* LaunchScreen.storyboard */; };
 		70AE82951E3BF319008CFE92 /* OpenTokBeaconTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AE82941E3BF319008CFE92 /* OpenTokBeaconTests.swift */; };
 		70AE82A01E3BF31A008CFE92 /* OpenTokBeaconUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AE829F1E3BF31A008CFE92 /* OpenTokBeaconUITests.swift */; };
+		70AE82BF1E3CD82D008CFE92 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 70AE82B01E3CD82D008CFE92 /* Info.plist */; };
+		70AE82C01E3CD82D008CFE92 /* OTAcceleratorPackUtilBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AE82B21E3CD82D008CFE92 /* OTAcceleratorPackUtilBundle.m */; };
+		70AE82C11E3CD82D008CFE92 /* OTAcceleratorSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AE82B41E3CD82D008CFE92 /* OTAcceleratorSession.m */; };
+		70AE82C21E3CD82D008CFE92 /* OTCommonCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AE82B61E3CD82D008CFE92 /* OTCommonCommunicator.m */; };
+		70AE82C31E3CD82D008CFE92 /* OTMultiPartyCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AE82B81E3CD82D008CFE92 /* OTMultiPartyCommunicator.m */; };
+		70AE82C41E3CD82D008CFE92 /* OTOneToOneCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AE82BA1E3CD82D008CFE92 /* OTOneToOneCommunicator.m */; };
+		70AE82C51E3CD82D008CFE92 /* OTVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AE82BC1E3CD82D008CFE92 /* OTVideoView.m */; };
+		70AE82C61E3CD82D008CFE92 /* UIView+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AE82BE1E3CD82D008CFE92 /* UIView+Helper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +45,6 @@
 /* Begin PBXFileReference section */
 		30D2ECB6B3159BE4CFF0AA68 /* Pods-OpenTokBeacon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenTokBeacon.release.xcconfig"; path = "Pods/Target Support Files/Pods-OpenTokBeacon/Pods-OpenTokBeacon.release.xcconfig"; sourceTree = "<group>"; };
 		4065D0F20398DAE9C98FA4A0 /* Pods-OpenTokBeacon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenTokBeacon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OpenTokBeacon/Pods-OpenTokBeacon.debug.xcconfig"; sourceTree = "<group>"; };
-		5F45A00C38F3A739FA2183ED /* Pods_OpenTokBeacon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenTokBeacon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		70AE827C1E3BF319008CFE92 /* OpenTokBeacon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenTokBeacon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70AE827F1E3BF319008CFE92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70AE82811E3BF319008CFE92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +58,23 @@
 		70AE829B1E3BF31A008CFE92 /* OpenTokBeaconUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenTokBeaconUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		70AE829F1E3BF31A008CFE92 /* OpenTokBeaconUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenTokBeaconUITests.swift; sourceTree = "<group>"; };
 		70AE82A11E3BF31A008CFE92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70AE82AD1E3C00EB008CFE92 /* BeaconManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconManager.swift; sourceTree = "<group>"; };
+		70AE82B01E3CD82D008CFE92 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70AE82B11E3CD82D008CFE92 /* OTAcceleratorPackUtilBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTAcceleratorPackUtilBundle.h; sourceTree = "<group>"; };
+		70AE82B21E3CD82D008CFE92 /* OTAcceleratorPackUtilBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTAcceleratorPackUtilBundle.m; sourceTree = "<group>"; };
+		70AE82B31E3CD82D008CFE92 /* OTAcceleratorSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTAcceleratorSession.h; sourceTree = "<group>"; };
+		70AE82B41E3CD82D008CFE92 /* OTAcceleratorSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTAcceleratorSession.m; sourceTree = "<group>"; };
+		70AE82B51E3CD82D008CFE92 /* OTCommonCommunicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTCommonCommunicator.h; sourceTree = "<group>"; };
+		70AE82B61E3CD82D008CFE92 /* OTCommonCommunicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTCommonCommunicator.m; sourceTree = "<group>"; };
+		70AE82B71E3CD82D008CFE92 /* OTMultiPartyCommunicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTMultiPartyCommunicator.h; sourceTree = "<group>"; };
+		70AE82B81E3CD82D008CFE92 /* OTMultiPartyCommunicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTMultiPartyCommunicator.m; sourceTree = "<group>"; };
+		70AE82B91E3CD82D008CFE92 /* OTOneToOneCommunicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTOneToOneCommunicator.h; sourceTree = "<group>"; };
+		70AE82BA1E3CD82D008CFE92 /* OTOneToOneCommunicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTOneToOneCommunicator.m; sourceTree = "<group>"; };
+		70AE82BB1E3CD82D008CFE92 /* OTVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTVideoView.h; sourceTree = "<group>"; };
+		70AE82BC1E3CD82D008CFE92 /* OTVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTVideoView.m; sourceTree = "<group>"; };
+		70AE82BD1E3CD82D008CFE92 /* UIView+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Helper.h"; sourceTree = "<group>"; };
+		70AE82BE1E3CD82D008CFE92 /* UIView+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Helper.m"; sourceTree = "<group>"; };
+		86CAAA223AAF454FF58124E8 /* Pods_OpenTokBeacon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenTokBeacon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37AF5C05B93BC4BB8EA366B4 /* Pods_OpenTokBeacon.framework in Frameworks */,
+				5ABD54C557C47C7627316298 /* Pods_OpenTokBeacon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +106,7 @@
 		70AE82731E3BF319008CFE92 = {
 			isa = PBXGroup;
 			children = (
+				70AE82AF1E3CD82D008CFE92 /* OTAcceleratorPackUtil */,
 				70AE827E1E3BF319008CFE92 /* OpenTokBeacon */,
 				70AE82931E3BF319008CFE92 /* OpenTokBeaconTests */,
 				70AE829E1E3BF31A008CFE92 /* OpenTokBeaconUITests */,
@@ -106,6 +131,7 @@
 			children = (
 				70AE827F1E3BF319008CFE92 /* AppDelegate.swift */,
 				70AE82811E3BF319008CFE92 /* ViewController.swift */,
+				70AE82AD1E3C00EB008CFE92 /* BeaconManager.swift */,
 				70AE82831E3BF319008CFE92 /* Main.storyboard */,
 				70AE82861E3BF319008CFE92 /* Assets.xcassets */,
 				70AE82881E3BF319008CFE92 /* LaunchScreen.storyboard */,
@@ -132,10 +158,33 @@
 			path = OpenTokBeaconUITests;
 			sourceTree = "<group>";
 		};
+		70AE82AF1E3CD82D008CFE92 /* OTAcceleratorPackUtil */ = {
+			isa = PBXGroup;
+			children = (
+				70AE82B01E3CD82D008CFE92 /* Info.plist */,
+				70AE82B11E3CD82D008CFE92 /* OTAcceleratorPackUtilBundle.h */,
+				70AE82B21E3CD82D008CFE92 /* OTAcceleratorPackUtilBundle.m */,
+				70AE82B31E3CD82D008CFE92 /* OTAcceleratorSession.h */,
+				70AE82B41E3CD82D008CFE92 /* OTAcceleratorSession.m */,
+				70AE82B51E3CD82D008CFE92 /* OTCommonCommunicator.h */,
+				70AE82B61E3CD82D008CFE92 /* OTCommonCommunicator.m */,
+				70AE82B71E3CD82D008CFE92 /* OTMultiPartyCommunicator.h */,
+				70AE82B81E3CD82D008CFE92 /* OTMultiPartyCommunicator.m */,
+				70AE82B91E3CD82D008CFE92 /* OTOneToOneCommunicator.h */,
+				70AE82BA1E3CD82D008CFE92 /* OTOneToOneCommunicator.m */,
+				70AE82BB1E3CD82D008CFE92 /* OTVideoView.h */,
+				70AE82BC1E3CD82D008CFE92 /* OTVideoView.m */,
+				70AE82BD1E3CD82D008CFE92 /* UIView+Helper.h */,
+				70AE82BE1E3CD82D008CFE92 /* UIView+Helper.m */,
+			);
+			name = OTAcceleratorPackUtil;
+			path = OpenTokBeacon/OTAcceleratorPackUtil;
+			sourceTree = "<group>";
+		};
 		9E93AAB627A366C7FEFF274C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5F45A00C38F3A739FA2183ED /* Pods_OpenTokBeacon.framework */,
+				86CAAA223AAF454FF58124E8 /* Pods_OpenTokBeacon.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -262,6 +311,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70AE82BF1E3CD82D008CFE92 /* Info.plist in Resources */,
 				70AE828A1E3BF319008CFE92 /* LaunchScreen.storyboard in Resources */,
 				70AE82871E3BF319008CFE92 /* Assets.xcassets in Resources */,
 				70AE82851E3BF319008CFE92 /* Main.storyboard in Resources */,
@@ -338,7 +388,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				70AE82821E3BF319008CFE92 /* ViewController.swift in Sources */,
+				70AE82C41E3CD82D008CFE92 /* OTOneToOneCommunicator.m in Sources */,
+				70AE82C61E3CD82D008CFE92 /* UIView+Helper.m in Sources */,
+				70AE82C11E3CD82D008CFE92 /* OTAcceleratorSession.m in Sources */,
+				70AE82C21E3CD82D008CFE92 /* OTCommonCommunicator.m in Sources */,
 				70AE82801E3BF319008CFE92 /* AppDelegate.swift in Sources */,
+				70AE82C51E3CD82D008CFE92 /* OTVideoView.m in Sources */,
+				70AE82C31E3CD82D008CFE92 /* OTMultiPartyCommunicator.m in Sources */,
+				70AE82C01E3CD82D008CFE92 /* OTAcceleratorPackUtilBundle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,8 +547,16 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4065D0F20398DAE9C98FA4A0 /* Pods-OpenTokBeacon.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 27XTSJS68A;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/OTKAnalytics\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenTok\"",
+					"/Users/javierfuchs/Job/opentok/src/OpenTokBeacon/OpenTokBeacon/Pods/OpenTok/OpenTok.framework/Headers/**",
+				);
 				INFOPLIST_FILE = OpenTokBeacon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.opentok.OpenTokBeacon;
@@ -504,8 +569,16 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 30D2ECB6B3159BE4CFF0AA68 /* Pods-OpenTokBeacon.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 27XTSJS68A;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/OTKAnalytics\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenTok\"",
+					"/Users/javierfuchs/Job/opentok/src/OpenTokBeacon/OpenTokBeacon/Pods/OpenTok/OpenTok.framework/Headers/**",
+				);
 				INFOPLIST_FILE = OpenTokBeacon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.opentok.OpenTokBeacon;
@@ -591,6 +664,7 @@
 				70AE82A61E3BF31A008CFE92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		70AE82A71E3BF31A008CFE92 /* Build configuration list for PBXNativeTarget "OpenTokBeaconTests" */ = {
 			isa = XCConfigurationList;
@@ -599,6 +673,7 @@
 				70AE82A91E3BF31A008CFE92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		70AE82AA1E3BF31A008CFE92 /* Build configuration list for PBXNativeTarget "OpenTokBeaconUITests" */ = {
 			isa = XCConfigurationList;
@@ -607,6 +682,7 @@
 				70AE82AC1E3BF31A008CFE92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
