@@ -12,7 +12,6 @@
 - (void)addPublisherView:(UIView *)publisherView;
 - (void)removePublisherView;
 
-- (void)connectCallHolder:(BOOL)connected;
 - (void)updatePublisherAudio:(BOOL)connected;
 - (void)updatePublisherVideo:(BOOL)connected;
 

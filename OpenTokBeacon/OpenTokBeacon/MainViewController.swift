@@ -69,10 +69,6 @@ import NVActivityIndicatorView
 
     }
 
-    @IBAction func callAction(_ sender: Any) {
-        call()
-    }
-
     private func startCommunicationUsingBeacon(beacon: Eddystone.Uid) {
         guard let session = SessionListManager.instance.session(by: beacon.instance)
             
@@ -95,7 +91,6 @@ import NVActivityIndicatorView
         switch signal {
         case .subscriberReady:
             // TODO: add a spinner
-            view.connectCallHolder(comm.isCallEnabled)
             view.enableControlButtons(forCall: true)
             view.addPublisherView(comm.publisherView)
             if comm.isSubscribeToVideo {

@@ -14,7 +14,6 @@
 
 // 3 action buttons at the bottom of the view
 @property (weak, nonatomic) IBOutlet UIButton *publisherVideoButton;
-@property (weak, nonatomic) IBOutlet UIButton *callButton;
 @property (weak, nonatomic) IBOutlet UIButton *publisherAudioButton;
 
 @property (weak, nonatomic) IBOutlet UIButton *reverseCameraButton;
@@ -37,7 +36,6 @@
     self.publisherView.layer.cornerRadius = 3;
     
     [self drawBorderOn:self.publisherAudioButton withWhiteBorder:YES];
-    [self drawBorderOn:self.callButton withWhiteBorder:NO];
     [self drawBorderOn:self.publisherVideoButton withWhiteBorder:YES];
     [self showSubscriberControls:NO];
 }
@@ -65,16 +63,6 @@
     [self.publisherView.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
 }
 
-- (void)connectCallHolder:(BOOL)connected {
-    if (connected) {
-        [self.callButton setImage:[UIImage imageNamed:@"hangUp"] forState:UIControlStateNormal];
-        self.callButton.layer.backgroundColor = [UIColor colorWithRed:(205/255.0) green:(32/255.0) blue:(40/255.0) alpha:1.0].CGColor;
-    }
-    else {
-        [self.callButton setImage:[UIImage imageNamed:@"startCall"] forState:UIControlStateNormal];
-        self.callButton.layer.backgroundColor = [UIColor colorWithRed:(106/255.0) green:(173/255.0) blue:(191/255.0) alpha:1.0].CGColor;
-    }
-}
 - (void)updatePublisherAudio:(BOOL)connected {
     if (connected) {
         [self.publisherAudioButton setImage:[UIImage imageNamed:@"mic"] forState: UIControlStateNormal];
@@ -146,7 +134,6 @@
     self.subscriberView.alpha = 0;
     [self.publisherView setHidden:YES];
     [self removePublisherView];
-    [self connectCallHolder:NO];
     [self updatePublisherAudio:YES];
     [self updatePublisherVideo:YES];
     [self updateSubscriberAudioButton:YES];
