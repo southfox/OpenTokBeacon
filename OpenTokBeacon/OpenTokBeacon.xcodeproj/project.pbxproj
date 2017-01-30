@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		5ABD54C557C47C7627316298 /* Pods_OpenTokBeacon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86CAAA223AAF454FF58124E8 /* Pods_OpenTokBeacon.framework */; };
 		70AE82801E3BF319008CFE92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AE827F1E3BF319008CFE92 /* AppDelegate.swift */; };
-		70AE82821E3BF319008CFE92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AE82811E3BF319008CFE92 /* ViewController.swift */; };
+		70AE82821E3BF319008CFE92 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AE82811E3BF319008CFE92 /* MainViewController.swift */; };
 		70AE82851E3BF319008CFE92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70AE82831E3BF319008CFE92 /* Main.storyboard */; };
 		70AE82871E3BF319008CFE92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70AE82861E3BF319008CFE92 /* Assets.xcassets */; };
 		70AE828A1E3BF319008CFE92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70AE82881E3BF319008CFE92 /* LaunchScreen.storyboard */; };
@@ -53,7 +53,7 @@
 		4065D0F20398DAE9C98FA4A0 /* Pods-OpenTokBeacon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenTokBeacon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OpenTokBeacon/Pods-OpenTokBeacon.debug.xcconfig"; sourceTree = "<group>"; };
 		70AE827C1E3BF319008CFE92 /* OpenTokBeacon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenTokBeacon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70AE827F1E3BF319008CFE92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		70AE82811E3BF319008CFE92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		70AE82811E3BF319008CFE92 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		70AE82841E3BF319008CFE92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		70AE82861E3BF319008CFE92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		70AE82891E3BF319008CFE92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -143,7 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				70AE827F1E3BF319008CFE92 /* AppDelegate.swift */,
-				70AE82811E3BF319008CFE92 /* ViewController.swift */,
+				70AE82811E3BF319008CFE92 /* MainViewController.swift */,
 				70AE82D51E3F80C4008CFE92 /* MainView.h */,
 				70AE82D61E3F80C4008CFE92 /* MainView.m */,
 				70AE82D01E3F6BA9008CFE92 /* Model */,
@@ -423,7 +423,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70AE82821E3BF319008CFE92 /* ViewController.swift in Sources */,
+				70AE82821E3BF319008CFE92 /* MainViewController.swift in Sources */,
 				70AE82CC1E3E0554008CFE92 /* OpenTokManager.swift in Sources */,
 				70AE82C41E3CD82D008CFE92 /* OTOneToOneCommunicator.m in Sources */,
 				70AE82D41E3F76DB008CFE92 /* Facade.swift in Sources */,

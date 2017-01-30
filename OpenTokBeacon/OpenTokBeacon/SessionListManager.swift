@@ -74,7 +74,8 @@ class SessionListManager: NSObject {
     func handleSessionPersistenceManagerDidRestoreStateNotification(_ notification: Notification) {
         DispatchQueue.main.async {
 
-            let sessionsJsonUrl = "http://192.168.250.185:3000" + "/sessions.json"
+//            let sessionsJsonUrl = "http://192.168.250.185:3000" + "/sessions.json"
+            let sessionsJsonUrl = "http://192.168.2.19:3000" + "/sessions.json"
             
             Alamofire.request(sessionsJsonUrl, method:.get).validate().responseArray { (response: DataResponse<[Session]>) in
                 if let result = response.result.value {

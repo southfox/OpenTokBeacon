@@ -8,6 +8,7 @@
 #import "UIView+Helper.h"
 
 @interface MainView()
+@property (weak, nonatomic) IBOutlet UIImageView *beaconImage;
 @property (weak, nonatomic) IBOutlet UIView *publisherView;
 @property (weak, nonatomic) IBOutlet UIView *subscriberView;
 
@@ -94,6 +95,8 @@
 
 #pragma mark - subscriber view
 - (void)addSubscribeView:(UIView *)subscriberView {
+    self.beaconImage.alpha = 0;
+    self.subscriberView.alpha = 1;
     [self.subscriberView addSubview:subscriberView];
     subscriberView.translatesAutoresizingMaskIntoConstraints = NO;
     [subscriberView addAttachedLayoutConstantsToSuperview];
@@ -139,6 +142,9 @@
 }
 
 - (void)resetAllControl {
+    self.beaconImage.alpha = 1;
+    self.subscriberView.alpha = 0;
+    [self.publisherView setHidden:YES];
     [self removePublisherView];
     [self connectCallHolder:NO];
     [self updatePublisherAudio:YES];
