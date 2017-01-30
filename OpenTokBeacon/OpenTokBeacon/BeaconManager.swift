@@ -9,38 +9,50 @@
 import Foundation
 import Eddystone
 
+
+/// Notification for when BeaconManager has completely restored its state.
+let BeaconManagerDidRestoreStateNotification: NSNotification.Name = NSNotification.Name(rawValue: "BeaconManagerDidRestoreStateNotification")
+
+let BeaconManagerBeaconDetectedSTARTNotification: NSNotification.Name = NSNotification.Name(rawValue: "BeaconManagerBeaconDetectedSTARTNotification")
+let BeaconManagerBeaconDetectedACKNotification: NSNotification.Name = NSNotification.Name(rawValue: "BeaconManagerBeaconDetectedACKNotification")
+let BeaconManagerBeaconDetectedNACKNotification: NSNotification.Name = NSNotification.Name(rawValue: "BeaconManagerBeaconDetectedNACKNotification")
+
 public class BeaconManager: Eddystone.ScannerDelegate {
-    struct notification {
-        struct beacon {
-            static let start : String = "notification.beacon.start"
-            struct detected {
-                static let ack : String = "notification.beacon.detected.ack"
-                static let nack : String = "notification.beacon.detected.nack"
-            }
-        }
-    }
     var uids = Eddystone.Scanner.nearbyUids
     var previousUids: [Eddystone.Uid] = []
+    var isStarted: Bool
     
     public static let instance = BeaconManager()
     
-    func start() {
-        Eddystone.Scanner.start(self)
-        NotificationCenter.default.post(name: NSNotification.Name(rawValue: notification.beacon.start), object: nil)
+    required public init() {
+        isStarted = false
     }
     
+    func start() {
+        if (isStarted) {
+            return;
+        }
+        isStarted = true
+        Eddystone.Scanner.start(self)
+        NotificationCenter.default.post(name: BeaconManagerBeaconDetectedSTARTNotification, object: nil)
+    }
+    func stop() {
+        isStarted = false
+    }
+    
+   
     public func eddystoneNearbyDidChange() {
         self.previousUids = self.uids
         self.uids = Eddystone.Scanner.nearbyUids
         for uid in self.previousUids {
             if !self.uids.contains(uid) {
-                NotificationCenter.default.post(name: NSNotification.Name(rawValue: notification.beacon.detected.nack), object: uid)
+                NotificationCenter.default.post(name:BeaconManagerBeaconDetectedNACKNotification, object: uid)
                 break
             }
         }
         for uid in self.uids {
             if !self.previousUids.contains(uid) {
-                NotificationCenter.default.post(name: NSNotification.Name(rawValue: notification.beacon.detected.ack), object: uid)
+                NotificationCenter.default.post(name: BeaconManagerBeaconDetectedACKNotification, object: uid)
                 break
             }
         }

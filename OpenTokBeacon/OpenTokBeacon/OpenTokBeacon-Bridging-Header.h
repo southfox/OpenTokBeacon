@@ -10,6 +10,9 @@
 #define OpenTokBeacon_Bridging_Header_h
 
 #import "OTAcceleratorSession.h"
+#import "OTOneToOneCommunicator.h"
+#import "OTCommonCommunicator.h"
+#import "MainView.h"
 
 
 #endif /* OpenTokBeacon_Bridging_Header_h */

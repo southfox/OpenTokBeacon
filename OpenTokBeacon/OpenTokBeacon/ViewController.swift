@@ -9,10 +9,14 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    // @property (nonatomic) MainView *mainView;
+    var mainView: MainView?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        mainView = view as? MainView
+        OpenTokManager.instance.useView(view: mainView!)
     }
 
     override func didReceiveMemoryWarning() {
